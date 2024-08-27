@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Creative Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">ホーム</a></li>
+                    <li><a href="#portfolio">作品集</a></li>
+                    <li><a href="#services">サービス</a></li>
+                    <li><a href="#about">プロフィール</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero" style="background-image: url('IMG_2076.JPG'); background-size: contain; background-position: center; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <div class="container" style="text-align: center;">
+            <h2 style="color: black;">あなたのビジョンを形にします</h2>
+            <p style="color: black;">デザイン、イラスト、Web開発の専門家</p>
+            <a href="#portfolio" class="btn" style="background-color: black; color: white; padding: 10px 20px; border-radius: 5px;">作品を見る</a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>私の作品</h2>
+            <p>これまで手掛けたプロジェクトの一部をご覧ください</p>
+            <div class="portfolio-gallery">
+                <div class="portfolio-item">
+                    <a href="https://fumiomatsunari.github.io/matsunari.github.io/" target="_blank" style="color: blue; text-decoration: underline;">ようこそ　CoderDojo　天白へ</a>
+                    <h3>Webサイトデザイン例です</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="logo.jpg" alt="crowdworks 提供作品">
+                    <h3>ロゴデザイン：crowdworks 提供作品</h3>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Dojo01.jpg" alt="作品3">
+                    <h3>AIが作った図形</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>提供するサービス</h2>
+            <ul>
+                <li>Webデザイン</li>
+                <li>イラストレーション</li>
+                <li>AI利用技術</li>
+                <li>ブランド構築</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>プロフィール</h2>
+            <p>私はデザインとWeb開発に情熱を持つフリーランサーです。まだ、まだ経験不足ですが皆様との交流を通じて成長したいと思います。</p>
+            <p>スキル: HTML, CSS, JavaScript、ChatGPT等のAI利用技術</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>お問い合わせ</h2>
+            <form>
+                <label for="name">お名前:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">メールアドレス:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">メッセージ:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">送信</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>© 2024 Creative Portfolio</p>
+        </div>
+    </footer>
+</body>
+</html>
